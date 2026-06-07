@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mm001",
+    "username": "matchmaker1",
+    "password": "tdc@2024",
+    "name": "Meera Kapoor",
+    "email": "meera@thedatecrew.com",
+    "role": "Senior Matchmaker",
+    "avatar": "MK"
+  },
+  {
+    "id": "mm002",
+    "username": "matchmaker2",
+    "password": "tdc@2024",
+    "name": "Rohit Sharma",
+    "email": "rohit@thedatecrew.com",
+    "role": "Matchmaker",
+    "avatar": "RS"
+  }
+]
