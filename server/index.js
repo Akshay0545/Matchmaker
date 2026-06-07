@@ -11,7 +11,13 @@ const matchRoutes = require('./routes/matches');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:5177',
+  'https://matchmaker-wheat.vercel.app',
+  process.env.CLIENT_URL
+].filter(Boolean);
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
